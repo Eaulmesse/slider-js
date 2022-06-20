@@ -14,8 +14,6 @@ body {
 
 
 .container {
-    background-position: center;
-    background-size: cover;
     height: 500px;
     width: 800px;
     display: block;
@@ -26,6 +24,8 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 .previous-button {
     background: url(./imgs/left.svg);
