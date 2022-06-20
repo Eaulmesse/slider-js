@@ -11,27 +11,22 @@ slider.style.background = `url('${img[i]}')`;
 
 
 nextBtn.addEventListener("click", ()=> {
-    
+    i++;
+    slider.style.background = `url('${img[i]}')`;
 
-    if (i < img.length-1) {
-        i++;
+    if (i > img.length-1) {
+        i = 0;
         slider.style.background = `url('${img[i]}')`;
     }
-
-    console.log(i);
-    console.log( slider.style.background);
 })
 
 
 previousBtn.addEventListener("click", ()=> {
-    
+    i--;
+    slider.style.background = `url('${img[i]}')`;
    
-    if (i > 0) {
-        i--;
+    if (i < 0) {
+        i = img.length - 1
         slider.style.background = `url('${img[i]}')`;
     }
-
-
-    console.log(i); 
-    console.log( slider.style.background);
 })
